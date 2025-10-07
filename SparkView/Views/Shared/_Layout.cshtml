@@ -1,50 +1,683 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - SparkView</title>
-    <script type="importmap"></script>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/SparkView.styles.css" asp-append-version="true" />
+    <meta charset="utf-8">
+    <meta name="description" content="Traip">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="EnvyTheme">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Traip - Travel & Tour Booking HTML Template</title>
+    <link rel="icon" href="~/images/favicon.png" type="image/png" sizes="16x16">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="~/css/bootstrap.min.css"  >
+    <!-- animate css -->
+    <link rel="stylesheet" href="~/css/animate.min.css"  >
+    <!-- owl carousel css -->
+    <link rel="stylesheet" href="~/css/owl.carousel.min.css"  >
+    <link rel="stylesheet" href="~/css/owl.theme.default.min.css"  >
+    <!-- meanmenu css -->       
+    <link rel="stylesheet" href="~/css/meanmenu.min.css"  >
+    <!-- jquery ui css -->      
+    <link rel="stylesheet" href="~/css/jquery-ui.min.css"  >
+    <!-- selectize css -->      
+    <link rel="stylesheet" href="~/css/selectize.min.css"  >
+    <!-- magnific popup css --> 
+    <link rel="stylesheet" href="~/css/magnific-popup.min.css"  >
+    <!-- icofont css -->        
+    <link rel="stylesheet" href="~/css/icofont.min.css"  >
+    <!-- flaticon css -->       
+    <link rel="stylesheet" href="~/css/flaticon.css"  >
+    <!-- style css -->          
+    <link rel="stylesheet" href="~/css/style.css"  >
+    <!-- responsive css -->         
+    <link rel="stylesheet" href="~/css/responsive.css"  >
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">SparkView</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+
+<body class="homepage-2">
+    <!-- preloader -->
+    <div class="preloader">
+        <div class="preloader-wrapper">
+            <div class="preloader-grid">
+                <div class="preloader-grid-item preloader-grid-item-1"></div>
+                <div class="preloader-grid-item preloader-grid-item-2"></div>
+                <div class="preloader-grid-item preloader-grid-item-3"></div>
+                <div class="preloader-grid-item preloader-grid-item-4"></div>
+                <div class="preloader-grid-item preloader-grid-item-5"></div>
+                <div class="preloader-grid-item preloader-grid-item-6"></div>
+                <div class="preloader-grid-item preloader-grid-item-7"></div>
+                <div class="preloader-grid-item preloader-grid-item-8"></div>
+                <div class="preloader-grid-item preloader-grid-item-9"></div>
+            </div>
+        </div>
+    </div>
+    <!-- .end preloader -->
+    <!-- preloader -->
+    <div class="preloader">
+        <div class="preloader-wrapper">
+            <div class="preloader-grid">
+                <div class="preloader-grid-item preloader-grid-item-1"></div>
+                <div class="preloader-grid-item preloader-grid-item-2"></div>
+                <div class="preloader-grid-item preloader-grid-item-3"></div>
+                <div class="preloader-grid-item preloader-grid-item-4"></div>
+                <div class="preloader-grid-item preloader-grid-item-5"></div>
+                <div class="preloader-grid-item preloader-grid-item-6"></div>
+                <div class="preloader-grid-item preloader-grid-item-7"></div>
+                <div class="preloader-grid-item preloader-grid-item-8"></div>
+                <div class="preloader-grid-item preloader-grid-item-9"></div>
+            </div>
+        </div>
+    </div>
+    <!-- .end preloader -->
+    <!-- Topbar -->
+    <div class="topbar">
+        <div class="container position-relative z-index-1">
+            <div class="row align-items-center justify-content-center">
+                <div class="topbar-item topbar-item-left">
+                    <ul class="social-list">
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank"><i class="flaticon-facebook"></i></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank"><i class="flaticon-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/" target="_blank"><i class="flaticon-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://linkedin.com/" target="_blank"><i class="flaticon-linkedin"></i></a>
                         </li>
                     </ul>
                 </div>
+                <div class="topbar-item justify-content-end">
+                    <ul class="topbar-action">
+                        <li>
+                            <i class="flaticon-mail"></i>
+                            <a href="/cdn-cgi/l/email-protection#5d35383131321d292f3c342d733e3230"><span class="__cf_email__" data-cfemail="eb838e878784ab9f998a829bc5888486">[email protected]</span></a>
+                        </li>
+                        <li>
+                            <i class="flaticon-telephone"></i>
+                            <a href="tel:+44-5346-338">+44 5346 338</a>
+                        </li>
+                        <li>
+                            <i class="flaticon-address"></i>
+                            3 Edgar Buildings, England, BA1 2FJ.
+                        </li>
+                    </ul>
+                    <div class="dropdown language-option">
+                        <!-- "language-option" class is used for language switcher -->
+                        <button class="dropdown-toggle" type="button" id="language1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="flaticon-worldwide"></i>
+                            <span class="lang-name"></span>  <!-- "lang-name" class is used for language switcher -->
+                        </button>
+                        <div class="dropdown-menu language-dropdown-menu" aria-labelledby="language1">
+                            <!-- "language-dropdown-menu" class is used for language switcher -->
+                            <a class="dropdown-item" href="#">
+                                <img src="~/images/uk.png" alt="flag">
+                                English
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <img src="~/images/china.png" alt="flag">
+                                简体中文
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <img src="~/images/uae.png" alt="flag">
+                                العربيّة
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </nav>
-    </header>
+        </div>
+    </div>
+    <!-- Topbar -->
+    <!-- Navbar -->
+    <div class="fixed-top">
+        <div class="navbar-area navbar-area-2">
+            <div class="container">
+                <div class="mobile-nav">
+                    <a href="index.html" class="mobile-brand">
+                        <img src="~/images/logo-default-color.png" alt="logo">
+                    </a>
+                    <div class="navbar-option">
+                        <div class="navbar-option-item">
+                            <ul class="navbar-option-list">
+                                <li class="d-md-none">
+                                    <a href="#" class="mobile-option-dot">
+                                        <i class="flaticon-ellipsis"></i>
+                                    </a>
+                                    <!-- "mobile-option-dropdown" class is used for all options -->
+                                    <div class="mobile-option-dropdown">
+                                        <ul class="navbar-option-list">
+                                            <li>
+                                                <div class="navbar-language dropdown language-option">
+                                                    <!-- "language-option" class is used for language switcher -->
+                                                    <button class="dropdown-toggle" type="button" id="language2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="flaticon-worldwide"></i>
+                                                        <span class="lang-name"></span>  <!-- "lang-name" class is used for language switcher -->
+                                                    </button>
+                                                    <div class="dropdown-menu language-dropdown-menu" aria-labelledby="language2">
+                                                        <!-- "language-dropdown-menu" class is used for language switcher -->
+                                                        <a class="dropdown-item" href="#">
+                                                            <img src="~/images/uk.png" alt="flag">
+                                                            English
+                                                        </a>
+                                                        <a class="dropdown-item" href="#">
+                                                            <img src="~/images/china.png" alt="flag">
+                                                            简体中文
+                                                        </a>
+                                                        <a class="dropdown-item" href="#">
+                                                            <img src="~/images/uae.png" alt="flag">
+                                                            العربيّة
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="page-search-btn">
+                                                    <i class="flaticon-searching"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="authentication.html">
+                                                    <i class="flaticon-user-1"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="top-sidebar-action">
+                                                    <i class="flaticon-grid"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="d-none d-md-inline-block d-lg-none">
+                                    <div class="navbar-language dropdown language-option">
+                                        <!-- "language-option" class is used for language switcher -->
+                                        <button class="dropdown-toggle" type="button" id="language3" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="flaticon-worldwide"></i>
+                                            <span class="lang-name"></span>  <!-- "lang-name" class is used for language switcher -->
+                                        </button>
+                                        <div class="dropdown-menu language-dropdown-menu" aria-labelledby="language3">
+                                            <!-- "language-dropdown-menu" class is used for language switcher -->
+                                            <a class="dropdown-item" href="#">
+                                                <img src="~/images/uk.png" alt="flag">
+                                                English
+                                            </a>
+                                            <a class="dropdown-item" href="#">
+                                                <img src="~/images/china.png" alt="flag">
+                                                简体中文
+                                            </a>
+                                            <a class="dropdown-item" href="#">
+                                                <img src="~/images/uae.png" alt="flag">
+                                                العربيّة
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="d-none d-md-inline-block">
+                                    <a href="#" class="page-search-btn">
+                                        <i class="flaticon-searching"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="cart.html">
+                                        <i class="flaticon-shopping-bag"></i>
+                                        <span class="option-badge">2</span>
+                                    </a>
+                                </li>
+                                <li class="d-none d-md-inline-block">
+                                    <a href="authentication.html">
+                                        <i class="flaticon-user-1"></i>
+                                    </a>
+                                </li>
+                                <li class="d-none d-md-inline-block d-lg-none">
+                                    <a href="#" class="top-sidebar-action">
+                                        <i class="flaticon-grid"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-nav">
+                <div class="container">
+                    <nav class="navbar navbar-expand-md navbar-light">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="~/images/logo-default-color.png" alt="logo">
+                        </a>
+                        <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                            <ul class="navbar-nav mx-auto">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link dropdown-toggle active">Home</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a href="index.html" class="nav-link">Home Demo 1</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="index-2.html" class="nav-link active">Home Demo 2</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="index-3.html" class="nav-link">Home Demo 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link dropdown-toggle">Pages</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a asp-controller="Home" asp-action="AboutUs" class="nav-link">About Us</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="faqs.html" class="nav-link">FAQ's</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="get-in-touch.html" class="nav-link">Get In Touch</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link dropdown-toggle">Products</a>
+                                            <ul class="dropdown-menu">
+                                                <li class="nav-item">
+                                                    <a href="products.html" class="nav-link">Products</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="single-product.html" class="nav-link">Single Product</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="cart.html" class="nav-link">Cart</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="checkout.html" class="nav-link">Checkout</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="wishlist.html" class="nav-link">Wishlist</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link dropdown-toggle">Hotels</a>
+                                            <ul class="dropdown-menu">
+                                                <li class="nav-item">
+                                                    <a href="hotels.html" class="nav-link">Hotels</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="single-hotel.html" class="nav-link">Single Hotel</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="team.html" class="nav-link">Our Team</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="who-we-are.html" class="nav-link">Who We Are</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link dropdown-toggle">Users</a>
+                                            <ul class="dropdown-menu">
+                                                <li class="nav-item">
+                                                    <a href="authentication.html" class="nav-link">Authentication</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="forget-password.html" class="nav-link">Forget Password</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="my-account.html" class="nav-link">My Account</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="my-orders.html" class="nav-link">My Orders</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="my-addresses.html" class="nav-link">My Addresses</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link dropdown-toggle">Others</a>
+                                            <ul class="dropdown-menu">
+                                                <li class="nav-item">
+                                                    <a href="404.html" class="nav-link">404 Error Page</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="coming-soon-page.html" class="nav-link">Coming Soon</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a asp-controller="Home" asp-action="TermsAndCondtions" class="nav-link">Terms & Conditions</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a asp-controller="Home" asp-action="Privacy" class="nav-link">Privacy Policy</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="search-page.html" class="nav-link">Search Page</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a asp-controller="Home" asp-action="Destination" class="nav-link dropdown-toggle">Destination</a>
+
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a asp-controller="Home" asp-action="Destination" class="nav-link">Destinations</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="single-destination.html" class="nav-link">Single Destination</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link dropdown-toggle">Tours</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a href="tour.html" class="nav-link">Tours</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="single-tour.html" class="nav-link">Single Tour</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link dropdown-toggle">Blogs</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a href="blogs-two-column.html" class="nav-link">Blogs Two Column</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="blogs-full.html" class="nav-link">Blogs Full</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="single-blog.html" class="nav-link">Single Blog</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a asp-controller="Home" asp-action="ContactUs" class="nav-link">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="navbar-option">
+                            <div class="navbar-option-item">
+                                <ul class="navbar-option-list">
+                                    <li>
+                                        <a href="#" class="page-search-btn">
+                                            <i class="flaticon-searching"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="cart.html">
+                                            <i class="flaticon-shopping-bag"></i>
+                                            <span class="option-badge">2</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="navbar-option-item">
+                                <a href="authentication.html" class="btn main-btn main-btn-arrow">Registration <i class="flaticon-right-arrow"></i></a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar --> 
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2025 - SparkView - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <!-- Footer -->
+    <footer class="footer footer-bg">
+        <div class="footer-upper pb-70 position-relative">
+            <div class="container">
+                <div class="row  justify-content-center">
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="footer-content-item">
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="~/images/logo-black.png" alt="logo"></a>
+                            </div>
+                            <ul class="footer-details footer-address">
+                                <li>
+                                    <i class="flaticon-mail"></i>
+                                    <a href="/cdn-cgi/l/email-protection#6008050c0c0f2014120109104e030f0d"><span class="__cf_email__" data-cfemail="bfd7dad3d3d0ffcbcdded6cf91dcd0d2">[email protected]</span></a>
+                                </li>
+                                <li>
+                                    <i class="flaticon-telephone"></i>
+                                    <a href="tel:+44-5346-338">+44 5346 338</a>
+                                </li>
+                                <li>
+                                    <i class="flaticon-address"></i>
+                                    3 Edgar Buildings, England, <br> BA1 2FJ.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="footer-content-list footer-content-item desk-pad-left-70">
+                            <div class="footer-content-title">
+                                <h3>Quick Links</h3>
+                            </div>
+                            <ul class="footer-details footer-list">
+                                <li>
+                                    <a href="tour.html">Popular Tour</a>
+                                </li>
+                                <li>
+                                    <a href="blogs-two-column.html">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="products.html">Shop</a>
+                                </li>
+                                <li>
+                                    <a href="faqs.html">FAQ's</a>
+                                </li>
+                                <li>
+                                    <a href="privacy-policy.html">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="footer-content-list footer-content-item desk-pad-left-70">
+                            <div class="footer-content-title">
+                                <h3>Important Links</h3>
+                            </div>
+                            <ul class="footer-details footer-list">
+                                <li>
+                                    <a asp-controller="Home" asp-action="Destination" class="nav-link">Destination</a>
+                                </li>
+                                <li>
+                                    <a href="get-in-touch.html">Get In Touch</a>
+                                </li>
+                                <li>
+                                    <a href="who-we-are.html">Who We Are</a>
+                                </li>
+                                <li>
+                                     <a asp-controller="Home" asp-action="ContactUs" class="nav-link">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a href="hotels.html">Hotels</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="footer-content-list footer-content-item desk-pad-left-30">
+                            <div class="footer-content-title">
+                                <h3>Instafeed</h3>
+                            </div>
+                            <div class="footer-details">
+                                <ul class="footer-gallery">
+                                    <li>
+                                        <a href="https://www.instagram.com/">
+                                            <img src="~/images/instafeed-1.jpg" alt="insta">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/">
+                                            <img src="~/images/instafeed-2.jpg" alt="insta">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/">
+                                            <img src="~/images/instafeed-3.jpg" alt="insta">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/">
+                                            <img src="~/images/instafeed-4.jpg" alt="insta">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/">
+                                            <img src="~/images/instafeed-5.jpg" alt="insta">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/">
+                                            <img src="~/images/instafeed-6.jpg" alt="insta">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-lower">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col footer-lower-item">
+                        <div class="footer-copyright-text">
+                            <p>© Traip is Proudly Owned by <a href="https://envytheme.com/" target="_blank">EnvyTheme</a></p>
+                        </div>
+                    </div>
+                    <div class="col footer-lower-item footer-lower-right">
+                        Follow:
+                        <ul class="social-list">
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank"><i class="flaticon-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank"><i class="flaticon-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/" target="_blank"><i class="flaticon-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://linkedin.com/" target="_blank"><i class="flaticon-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <!-- Footer -->
+    <!-- Top Sidebar -->
+    <div class="top-sidebar-wrapper">
+        <div class="top-sidebar-modal">
+            <div class="top-sidebar-body">
+                <div class="topbar-sidebar-header">
+                    <div class="topbar-sidebar-brand">
+                        <a href="index.html">
+                            <img src="~/images/logo-default-color.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="topbar-sidebar-close">
+                        <i class="flaticon-close"></i>
+                    </div>
+                </div>
+                <div class="topbar-sidebar-item">
+                    <h3>Contact Us</h3>
+                    <ul class="topbar-sidebar-lists">
+                        <li>
+                            <i class="flaticon-mail"></i>
+                            <a href="/cdn-cgi/l/email-protection#d5bdb0b9b9ba95a1a7b4bca5fbb6bab8"><span class="__cf_email__" data-cfemail="0e666b6262614e7a7c6f677e206d6163">[email protected]</span></a>
+                        </li>
+                        <li>
+                            <i class="flaticon-telephone"></i>
+                            <a href="tel:+44-5346-338">+44 5346 338</a>
+                        </li>
+                        <li>
+                            <i class="flaticon-address"></i>
+                            3 Edgar Buildings, England, BA1 2FJ.
+                        </li>
+                    </ul>
+                </div>
+                <div class="topbar-sidebar-item">
+                    <h3>Follow Us</h3>
+                    <ul class="social-list">
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank"><i class="flaticon-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank"><i class="flaticon-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/" target="_blank"><i class="flaticon-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://linkedin.com/" target="_blank"><i class="flaticon-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Top Sidebar -->
+    <!-- Search Wrapper -->
+    <div class="searchbar-wrapper">
+        <div class="searchbar-body">
+            <div class="searchbar-close page-searchbar-close">
+                <i class="flaticon-close"></i>
+            </div>
+            <div class="searchbar-form">
+                <img src="~/images/logo.png" alt="logo">
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="Search*" class="form-control" required="">
+                        <button class="btn main-btn" type="submit">Search Now</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Search Wrapper -->
+    <!-- Scroll-top -->
+    <div class="scroll-top" id="scrolltop">
+        <div class="scroll-top-inner">
+            <i class="icofont-long-arrow-up"></i>
+        </div>
+    </div>
+    <!-- Scroll-top -->
+    <!-- essential js -->
+    <script data-cfasync="false" src="js/email-decode.min.js"></script>
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/bootstrap.bundle.min.js"></script>
+    <!-- jquery ui js -->
+    <script src="~/js/jquery-ui.js"></script>
+    <!-- selectize js -->
+    <script src="~/js/selectize.min.js"></script>
+    <!-- magnific popup js -->
+    <script src="~/js/jquery.magnific-popup.min.js"></script>
+    <!-- owl carousel js -->
+    <script src="~/js/owl.carousel.min.js"></script>
+    <!-- form ajazchimp js -->
+    <script src="~/js/jquery.ajaxchimp.min.js"></script>
+    <!-- form validator js  -->
+    <script src="~/js/form-validator.min.js"></script>
+    <!-- contact form js -->
+    <script src="~/js/contact-form-script.js"></script>
+    <!-- meanmenu js -->
+    <script src="~/js/jquery.meanmenu.min.js"></script>
+    <!-- main js -->
+    <script src="~/js/script.js"></script>
+    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97add8805a9949b9',t:'MTc1NzE2MDQ0Mg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+    <iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

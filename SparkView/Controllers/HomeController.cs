@@ -17,8 +17,23 @@ namespace SparkView.Controllers
         {
             return View();
         }
-
+        public IActionResult AboutUs()
+        {
+            return View();
+        }
+        public IActionResult ContactUs()
+        {
+            return View();
+        }
+        public IActionResult Destination()
+        {
+            return View();
+        }
         public IActionResult Privacy()
+        {
+            return View();
+        }
+        public IActionResult TermsAndCondtion()
         {
             return View();
         }
