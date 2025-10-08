@@ -249,111 +249,15 @@
                             <img src="~/images/logo-default-color.png" alt="logo">
                         </a>
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
-                            <ul class="navbar-nav mx-auto">
+                            <ul class="navbar-nav mx-auto">                            
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link dropdown-toggle active">Home</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="index.html" class="nav-link">Home Demo 1</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="index-2.html" class="nav-link active">Home Demo 2</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="index-3.html" class="nav-link">Home Demo 3</a>
-                                        </li>
-                                    </ul>
+                                    <a asp-controller="Home" asp-action="Index" class="nav-link active">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link dropdown-toggle">Pages</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a asp-controller="Home" asp-action="AboutUs" class="nav-link">About Us</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="faqs.html" class="nav-link">FAQ's</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="get-in-touch.html" class="nav-link">Get In Touch</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link dropdown-toggle">Products</a>
-                                            <ul class="dropdown-menu">
-                                                <li class="nav-item">
-                                                    <a href="products.html" class="nav-link">Products</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="single-product.html" class="nav-link">Single Product</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="cart.html" class="nav-link">Cart</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="checkout.html" class="nav-link">Checkout</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="wishlist.html" class="nav-link">Wishlist</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link dropdown-toggle">Hotels</a>
-                                            <ul class="dropdown-menu">
-                                                <li class="nav-item">
-                                                    <a href="hotels.html" class="nav-link">Hotels</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="single-hotel.html" class="nav-link">Single Hotel</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="team.html" class="nav-link">Our Team</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="who-we-are.html" class="nav-link">Who We Are</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link dropdown-toggle">Users</a>
-                                            <ul class="dropdown-menu">
-                                                <li class="nav-item">
-                                                    <a href="authentication.html" class="nav-link">Authentication</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="forget-password.html" class="nav-link">Forget Password</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="my-account.html" class="nav-link">My Account</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="my-orders.html" class="nav-link">My Orders</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="my-addresses.html" class="nav-link">My Addresses</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link dropdown-toggle">Others</a>
-                                            <ul class="dropdown-menu">
-                                                <li class="nav-item">
-                                                    <a href="404.html" class="nav-link">404 Error Page</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="coming-soon-page.html" class="nav-link">Coming Soon</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a asp-controller="Home" asp-action="TermsAndCondtions" class="nav-link">Terms & Conditions</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a asp-controller="Home" asp-action="Privacy" class="nav-link">Privacy Policy</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="search-page.html" class="nav-link">Search Page</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
+                                    <a asp-controller="Home" asp-action="AboutUs" class="nav-link">About Us</a>
+                                </li>                            
+                                <li class="nav-item">
+                                    <a asp-controller="Home" asp-action="MembershipPlan" class="nav-link">MemberShip Plan</a>
                                 </li>
                                 <li class="nav-item">
                                     <a asp-controller="Home" asp-action="Destination" class="nav-link dropdown-toggle">Destination</a>

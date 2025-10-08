@@ -1,0 +1,191 @@
+﻿<!-- Pricing Section -->
+<section class="pricing-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Haven Club Membership Plans</h2>
+        <div class="row justify-content-center gx-0">
+
+            <!-- Basic Plan -->
+            <div class="col-md-4 d-flex justify-content-center">
+                <div class="card shadow rounded-4 overflow-hidden card-custom">
+                    <div class="card-header text-center py-4 bg-white">
+                        <h5 class="text-muted mb-2">BASIC PLAN</h5>
+                        <h3 class="fw-bold mb-1 text-success">₹99,999</h3>
+                        <small>Valid for 3 Years</small>
+                    </div>
+                    <div class="card-body bg-gradient-basic">
+                        <ul class="list-unstyled mb-4 text-start ps-4">
+                            <li>✅ Clubhouse Lounge Access</li>
+                            <li>❌ No Spa Access</li>
+                            <li>✅ Weekend Pool Access</li>
+                            <li>❌ No Guest Passes</li>
+                        </ul>
+                        <div class="text-center">
+                            <a href="#" class="btn subscribe-btn shadow p-3 mb-3 rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#subscribeModal">SUBSCRIBE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Premium Plan -->
+            <div class="col-md-4 d-flex justify-content-center">
+                <div class="card shadow rounded-4 overflow-hidden card-custom">
+                    <div class="card-header text-center py-4 bg-white">
+                        <h5 class="text-muted mb-2">PREMIUM PLAN</h5>
+                        <h3 class="fw-bold mb-1 text-primary">₹1,50,000</h3>
+                        <small>Valid for 5 Years</small>
+                    </div>
+                    <div class="card-body bg-gradient-premium">
+                        <ul class="list-unstyled mb-4 text-start ps-4">
+                            <li>✅ All Basic Features</li>
+                            <li>✅ Full Gym & Spa Access</li>
+                            <li>✅ Kids Play Area Included</li>
+                            <li>✅ 2 Guest Passes / Month</li>
+                        </ul>
+                        <div class="text-center">
+                            <a href="#" class="btn subscribe-btn shadow p-3 mb-3 rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#subscribeModal">SUBSCRIBE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ultimate Plan -->
+            <div class="col-md-4 d-flex justify-content-center">
+                <div class="card shadow rounded-4 overflow-hidden card-custom">
+                    <div class="card-header text-center py-4 bg-white">
+                        <h5 class="text-muted mb-2">ULTIMATE PLAN</h5>
+                        <h3 class="fw-bold mb-1 text-danger">₹3,50,000</h3>
+                        <small>Valid for 10 Years</small>
+                    </div>
+                    <div class="card-body bg-gradient-ultimate">
+                        <ul class="list-unstyled mb-4 text-start ps-4">
+                            <li>✅ All Premium Features</li>
+                            <li>✅ VIP Event Invitations</li>
+                            <li>✅ Free Parking Access</li>
+                            <li>✅ 5 Guest Passes / Month</li>
+                        </ul>
+                        <div class="text-center">
+                            <a href="#" class="btn subscribe-btn shadow p-3 mb-3 rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#subscribeModal">SUBSCRIBE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Subscription Modal -->
+<div class="modal fade" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content p-4">
+            <div class="modal-header">
+                <h1 class="modal-title text-center fs-4" id="subscribeModalLabel">Subscribe Now</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body mt-4">
+                <form>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Your Name">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Phone">
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                        </div>
+                        <div class="col">
+                            <select class="form-select">
+                                <option selected>Select Membership</option>
+                                <option>Basic Plan - ₹99,999</option>
+                                <option>Premium Plan - ₹1,50,000</option>
+                                <option>Ultimate Plan - ₹3,50,000</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col">
+                            <input type="number" class="form-control" placeholder="Number of Adults">
+                        </div>
+                        <div class="col">
+                            <input type="number" class="form-control" placeholder="Number of Kids">
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-warning px-5">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    /* Card Styling */
+    .card-custom {
+        width: 100%;
+        max-width: 330px;
+        background-color: #fff;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .card-custom:hover {
+            transform: scale(1.06);
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+            z-index: 3;
+        }
+
+    .card-header h3 {
+        font-size: 2rem;
+    }
+
+    ul li {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    /* Gradient backgrounds */
+    .bg-gradient-basic {
+        background: linear-gradient(135deg, #00c9ff, #92fe9d);
+        color: #fff;
+    }
+
+    .bg-gradient-premium {
+        background: linear-gradient(135deg, #a770ef, #cf8bf3, #fdb99b);
+        color: #fff;
+    }
+
+    .bg-gradient-ultimate {
+        background: linear-gradient(135deg, #ff758c, #ff7eb3, #ffb199);
+        color: #fff;
+    }
+
+    /* Subscribe button custom green hover */
+    .subscribe-btn {
+        background-color: white;
+        color: black;
+        border: none;
+        transition: all 0.3s ease;
+    }
+
+        .subscribe-btn:hover {
+            background-color: #28a745 !important; /* Bootstrap green */
+            color: white;
+            transform: scale(1.05);
+        }
+
+    .btn-warning:hover {
+        background-color: #e0a800;
+    }
+
+    .pricing-section h2 {
+        font-weight: 700;
+    }
+    </style>
