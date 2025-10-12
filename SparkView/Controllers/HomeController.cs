@@ -55,5 +55,9 @@ namespace SparkView.Controllers
         {
             return View();
         }
+        public IActionResult DomesticDestination()
+        {
+            return View();
+        }
     }
 }
