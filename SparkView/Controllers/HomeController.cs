@@ -47,5 +47,13 @@ namespace SparkView.Controllers
         {
             return View();
         }
+        public IActionResult Blog()
+        {
+            return View();
+        }
+        public IActionResult InternationDestination()
+        {
+            return View();
+        }
     }
 }
