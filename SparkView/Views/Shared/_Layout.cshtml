@@ -137,7 +137,7 @@
         <div class="navbar-area navbar-area-2">
             <div class="container">
                 <div class="mobile-nav">    
-                    <a href="index.html" class="mobile-brand">
+                    <a  class="mobile-brand" asp-controller="Home" asp-action="Index">
                         <img src="~/images/sparkview-02.png" alt="logo">
                     </a>
                     <div class="navbar-option">
@@ -160,34 +160,11 @@
                                                     <div class="dropdown-menu language-dropdown-menu" aria-labelledby="language2">
                                                         <!-- "language-dropdown-menu" class is used for language switcher -->
                                                         <a class="dropdown-item" href="#">
-                                                            <img src="~/images/uk.png" alt="flag">
                                                             English
-                                                        </a>
-                                                        <a class="dropdown-item" href="#">
-                                                            <img src="~/images/china.png" alt="flag">
-                                                            简体中文
-                                                        </a>
-                                                        <a class="dropdown-item" href="#">
-                                                            <img src="~/images/uae.png" alt="flag">
-                                                            العربيّة
-                                                        </a>
+                                                       </a>
+                                                        
                                                     </div>
                                                 </div>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="page-search-btn">
-                                                    <i class="flaticon-searching"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="authentication.html">
-                                                    <i class="flaticon-user-1"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="top-sidebar-action">
-                                                    <i class="flaticon-grid"></i>
-                                                </a>
                                             </li>
                                         </ul>
                                     </div>
@@ -199,39 +176,14 @@
                                             <i class="flaticon-worldwide"></i>
                                             <span class="lang-name"></span>  <!-- "lang-name" class is used for language switcher -->
                                         </button>
-                                        <div class="dropdown-menu language-dropdown-menu" aria-labelledby="language3">
-                                            <!-- "language-dropdown-menu" class is used for language switcher -->
+                                        <div class="dropdown-menu language-dropdown-menu" >
                                             <a class="dropdown-item" href="#">
-                                                <img src="~/images/uk.png" alt="flag">
                                                 English
-                                            </a>
-                                            <a class="dropdown-item" href="#">
-                                                <img src="~/images/china.png" alt="flag">
-                                                简体中文
-                                            </a>
-                                            <a class="dropdown-item" href="#">
-                                                <img src="~/images/uae.png" alt="flag">
-                                                العربيّة
-                                            </a>
+                                            </a>                                          
                                         </div>
                                     </div>
                                 </li>
-                                <li class="d-none d-md-inline-block">
-                                    <a href="#" class="page-search-btn">
-                                        <i class="flaticon-searching"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="cart.html">
-                                        <i class="flaticon-shopping-bag"></i>
-                                        <span class="option-badge">2</span>
-                                    </a>
-                                </li>
-                                <li class="d-none d-md-inline-block">
-                                    <a href="authentication.html">
-                                        <i class="flaticon-user-1"></i>
-                                    </a>
-                                </li>
+                             
                                 <li class="d-none d-md-inline-block d-lg-none">
                                     <a href="#" class="top-sidebar-action">
                                         <i class="flaticon-grid"></i>
@@ -245,8 +197,8 @@
             <div class="main-nav">
                 <div class="container">
                     <nav class="navbar navbar-expand-md navbar-light">
-                        <a class="navbar-brand" href="index.html">
-                            <img src="~/images/sparkview-02.png" alt="logo">
+                        <a class="navbar-brand" asp-controller="Home" asp-action="Index">
+                            <img  src="~/images/sparkview-02.png" alt="logo">
                         </a>
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                             <ul class="navbar-nav mx-auto">                            
@@ -271,52 +223,14 @@
                                         </li>
                                     </ul>
                                 </li>
-                                @* <li class="nav-item">
-                                    <a href="#" class="nav-link dropdown-toggle">Tours</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="tour.html" class="nav-link">Tours</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="single-tour.html" class="nav-link">Single Tour</a>
-                                        </li>
-                                    </ul>
-                                </li> *@
-                                @* <li class="nav-item">
-                                    <a href="#" class="nav-link dropdown-toggle">Blogs</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="blogs-two-column.html" class="nav-link">Blogs Two Column</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="blogs-full.html" class="nav-link">Blogs Full</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="single-blog.html" class="nav-link">Single Blog</a>
-                                        </li>
-                                    </ul>
-                                </li> *@
+                              
                                 <li class="nav-item">
                                     <a asp-controller="Home" asp-action="ContactUs" class="nav-link">Contact Us</a>
                                 </li>
                             </ul>
                         </div>
                             <div class="navbar-option">
-                                <div class="navbar-option-item">
-                                    <ul class="navbar-option-list">
-                                       @*  <li>
-                                            <a href="#" class="page-search-btn">
-                                                <i class="flaticon-searching"></i>
-                                            </a>
-                                        </li> *@
-                                        @* <li>
-                                            <a href="cart.html">
-                                                <i class="flaticon-shopping-bag"></i>
-                                                <span class="option-badge">2</span>
-                                            </a>
-                                        </li> *@
-                                    </ul>
-                                </div>
+                              
                                 <div class="navbar-option-item">
                                     <a href="authentication.html" class="btn main-btn main-btn-arrow">Pay Now <i class="flaticon-right-arrow"></i></a>
                                 </div>
@@ -341,7 +255,7 @@
                     <div class="col-sm-6 col-md-6 col-lg-3">
                         <div class="footer-content-item">
                             <div class="footer-logo">
-                                <a href="index.html"><img src="~/images/sparkview-02.png" alt="logo"></a>
+                                <a ><img src="~/images/sparkview-02.png" alt="logo"></a>
                             </div>
                             <ul class="footer-details footer-address">
                                 <li>
@@ -363,30 +277,7 @@
                             </ul>
                         </div>
                     </div>
-                    @* <div class="col-sm-6 col-md-6 col-lg-3">
-                        <div class="footer-content-list footer-content-item desk-pad-left-70">
-                            <div class="footer-content-title">
-                                <h3>Quick Links</h3>
-                            </div>
-                            <ul class="footer-details footer-list">
-                                <li>
-                                    <a href="tour.html">Popular Tour</a>
-                                </li>
-                                <li>
-                                    <a href="blogs-two-column.html">Blog</a>
-                                </li>
-                                <li>
-                                    <a href="products.html">Shop</a>
-                                </li>
-                                <li>
-                                    <a href="faqs.html">FAQ's</a>
-                                </li>
-                                <li>
-                                    <a href="privacy-policy.html">Privacy Policy</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div> *@
+                  
                     <div class="col-sm-6 col-md-6 col-lg-3">
                         <div class="footer-content-list footer-content-item desk-pad-left-70">
                             <div class="footer-content-title">
@@ -491,7 +382,7 @@
             <div class="top-sidebar-body">
                 <div class="topbar-sidebar-header">
                     <div class="topbar-sidebar-brand">
-                        <a href="index.html">
+                        <a asp-controller="Home" asp-action="Index">
                             <img src="~/images/sparkview-02.png" alt="logo">
                         </a>
                     </div>
@@ -504,11 +395,11 @@
                     <ul class="footer-details footer-address">
                         <li>
                             <i class="flaticon-mail"></i>
-                            <a> <span>info@sparkviewclubandresorts.in</span></a>
+                            <a href="#" > <span>info@sparkviewclubandresorts.in</span></a>
                         </li>
                         <li>
                             <i class="flaticon-mail"></i>
-                            <a> <span> reservation@sparkviewclubandresorts.in</span></a>
+                            <a href="#"> <span> reservation@sparkviewclubandresorts.in</span></a>
                         </li>
                         <li>
                             <i class="flaticon-telephone"></i>
@@ -529,12 +420,7 @@
                         <li>
                             <a href="https://www.instagram.com/sparkviewclubandresort?igsh=MTBvNWw5eXQ1dHNjaw==" target="_blank"><i class="flaticon-instagram"></i></a>
                         </li>
-                        @* <li>
-                            <a href="#" target="_blank"><i class="flaticon-twitter"></i></a>
-                        </li>
-                        <li>
-                            <a href="#" target="_blank"><i class="flaticon-linkedin"></i></a>
-                        </li> *@
+                       
                     </ul>
                 </div>
             </div>

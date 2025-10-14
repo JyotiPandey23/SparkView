@@ -1,66 +1,10 @@
-/*------------------------------------------------------------------
-[Table of contents]
-@File: Traip Template Style
-[ Default Index Number ]
-- Defult css with Helper css
-    -- Before this comment ( Start Main CSS Style ) defult css continue .
-- helper css
-- preloader
-- topbar
-- navbar
-- header
-- inner-page-header
-- mobile-booking-search
-- shapes
-- holiday-planning
-- review
-- tour-section
-- radial-animation
-- line-grid-shape bg
-- popular-package-carousel
-- tour-video-section
-- image-bg
-- testimoinal-section
-- partner
-- section-buttons
-- product
-- blog
-- footer
-- top-sidebar
-- destination
-- gallery
-- about-section
-- forum
-- sidebar
-- comment-area
-- details-card
-- contact
-- accordion-section
-- cart-section
-- coupon modal
-- checkout-section
-- account-page-section
-- authentication-section
-- coming-soon-section
-- error-section
-- searchbar-wrapper
-- split screen
-- scroll-top
--------------------------------------------------------------------*/
-/*------------------------------------------------------------------
-[Typography]
-	[ This template has one font typography ]
-		Typography 1: 'Josefin', sans-serif;
+
 -------------------------------------------------------------------*/
 /*************** IMPORT FONTS ***************/
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 /*************** COLOR VARIABLE ***************/
-/*************** MEDIA VARIABLE ***************/
-/*************** COLOR VARIABLE ***************/
-/*************** FONT VARIABLE ***************/
-/*************** DEFAULT CSS ***************/
 html {
   overflow: auto !important;
   height: auto !important;
@@ -8193,3 +8137,7 @@ button:focus, button:active {
   border-radius: 50%;
 }
 /*# sourceMappingURL=style.css.map */
+
+
+
+/*membership login*/

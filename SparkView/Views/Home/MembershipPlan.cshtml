@@ -90,31 +90,55 @@
 </section>
 
 <!-- Subscription Modal -->
+<!-- Subscribe Modal -->
 <div class="modal fade" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content p-4">
-            <div class="modal-header">
-                <h1 class="modal-title text-center fs-4" id="subscribeModalLabel">Subscribe Now</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content p-0 border-0 rounded-4 shadow-lg" style="overflow: hidden;">
+
+            <!-- Header with Gradient -->
+            <div class="modal-header text-center flex-column p-4"
+                 style="background: linear-gradient(135deg, #fbc02d, #fdd835); color: #fff;">
+                <h2 class="modal-title fw-bold fs-4" id="subscribeModalLabel">Subscribe Now</h2>
+                <p class="fs-6 mb-0">Join our exclusive membership plans today!</p>
+                <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
 
-            <div class="modal-body mt-4">
+            <!-- Body -->
+            <div class="modal-body p-4" style="background: #fff;">
                 <form>
+                    <!-- Name & Phone -->
                     <div class="row mb-3">
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="Your Name">
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <div class="input-group shadow-sm rounded-pill overflow-hidden">
+                                <span class="input-group-text bg-light border-0">
+                                    <i class="bi bi-person-fill"></i>
+                                </span>
+                                <input type="text" class="form-control border-0" placeholder="Your Name" required>
+                            </div>
                         </div>
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="Phone">
+                        <div class="col-md-6">
+                            <div class="input-group shadow-sm rounded-pill overflow-hidden">
+                                <span class="input-group-text bg-light border-0">
+                                    <i class="bi bi-telephone-fill"></i>
+                                </span>
+                                <input type="text" class="form-control border-0" placeholder="Phone" required>
+                            </div>
                         </div>
                     </div>
 
+                    <!-- Email & Membership -->
                     <div class="row mb-3">
-                        <div class="col">
-                            <input type="email" class="form-control" placeholder="Your Email">
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <div class="input-group shadow-sm rounded-pill overflow-hidden">
+                                <span class="input-group-text bg-light border-0">
+                                    <i class="bi bi-envelope-fill"></i>
+                                </span>
+                                <input type="email" class="form-control border-0" placeholder="Your Email" required>
+                            </div>
                         </div>
-                        <div class="col">
-                            <select class="form-select">
+                        <div class="col-md-6">
+                            <select class="form-select shadow-sm rounded-pill">
                                 <option selected>Select Membership</option>
                                 <option>Basic Plan - ₹99,999</option>
                                 <option>Premium Plan - ₹1,50,000</option>
@@ -123,23 +147,33 @@
                         </div>
                     </div>
 
-                    <div class="row mb-3">
-                        <div class="col">
-                            <input type="number" class="form-control" placeholder="Number of Adults">
+                    <!-- Adults & Kids -->
+                    <div class="row mb-4">
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <input type="number" class="form-control rounded-pill shadow-sm" placeholder="Number of Adults" required>
                         </div>
-                        <div class="col">
-                            <input type="number" class="form-control" placeholder="Number of Kids">
+                        <div class="col-md-6">
+                            <input type="number" class="form-control rounded-pill shadow-sm" placeholder="Number of Kids">
                         </div>
                     </div>
 
+                    <!-- Submit Button -->
                     <div class="text-center">
-                        <button type="submit" class="btn btn-warning px-5">Submit</button>
+                        <button type="submit" class="btn btn-warning px-5 py-2 rounded-pill fw-bold shadow hover-glow">
+                            Submit
+                        </button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
 </div>
+
+
+<!-- Include Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+
 <style>
     /* Card Styling */
     .card-custom {
@@ -203,4 +237,19 @@
     .pricing-section h2 {
         font-weight: 700;
     }
-    </style>
+
+    .hover-glow:hover {
+        box-shadow: 0 0 20px rgba(255, 193, 7, 0.6);
+        transform: scale(1.05);
+        transition: all 0.3s ease;
+    }
+
+    .form-control:focus, .form-select:focus {
+        border-color: #fbc02d;
+        box-shadow: 0 0 8px rgba(251, 192, 35, 0.5);
+    }
+
+    .input-group-text i {
+        color: #fbc02d;
+    }
+</style>
