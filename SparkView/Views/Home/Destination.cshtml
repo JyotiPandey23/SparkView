@@ -233,7 +233,7 @@
             </div>
             <div class="card-1-content">
               <div class="card-1-info">
-                <h3><a href="single-destination.html">${dest.name}</a></h3>
+                <h3><a >${dest.name}</a></h3>
                 <div class="card-1-reviews">
                   <ul class="review-star">
                     <li class="full-star"><i></i></li>
@@ -248,7 +248,7 @@
               <p>${dest.description}</p>
             </div>
             <div class="destination-card-link">
-              <a href="single-destination.html">&#8594;</a>
+              <a >&#8594;</a>
             </div>
           </div>
         `;
@@ -263,7 +263,7 @@
       // Previous button
       const prevLi = document.createElement('li');
       prevLi.className = 'page-item' + (page === 1 ? ' disabled' : '');
-      prevLi.innerHTML = `<a class="page-link" href="#" aria-label="Previous">&#8249;</a>`;
+      prevLi.innerHTML = `<a class="page-link"  aria-label="Previous">&#8249;</a>`;
       prevLi.addEventListener('click', e => {
         e.preventDefault();
         if (page > 1) {
@@ -277,7 +277,7 @@
       for (let i = 1; i <= totalPages; i++) {
         const li = document.createElement('li');
         li.className = 'page-item' + (i === page ? ' active' : '');
-        li.innerHTML = `<a class="page-link" href="#">${i}</a>`;
+        li.innerHTML = `<a class="page-link" >${i}</a>`;
         li.addEventListener('click', e => {
           e.preventDefault();
           if (i !== currentPage) {
@@ -291,7 +291,7 @@
       // Next button
       const nextLi = document.createElement('li');
       nextLi.className = 'page-item' + (page === totalPages ? ' disabled' : '');
-      nextLi.innerHTML = `<a class="page-link" href="#" aria-label="Next">&#8250;</a>`;
+      nextLi.innerHTML = `<a class="page-link"  aria-label="Next">&#8250;</a>`;
       nextLi.addEventListener('click', e => {
         e.preventDefault();
         if (page < totalPages) {
